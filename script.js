@@ -32,7 +32,7 @@ cart.forEach(item=>{
 message+=item+"%0A";
 });
 
-let whatsapp="https://wa.me/919876543210?text="+message;
+let whatsapp="https://wa.me/919491021288?text="+message;
 
 window.open(whatsapp,"_blank");
 
@@ -40,3 +40,4 @@ window.open(whatsapp,"_blank");
 
 
 }
+
