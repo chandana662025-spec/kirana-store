@@ -18,13 +18,25 @@ function displayCart() {
 
 function placeOrder() {
 
-    let name = document.getElementById("name").value;
-    let phone = document.getElementById("phone").value;
+    function placeOrder(){
 
-    alert("Order Placed! Please pickup from store.");
+let name=document.getElementById("name").value;
+let phone=document.getElementById("phone").value;
 
-    console.log("Customer:", name);
-    console.log("Phone:", phone);
-    console.log("Items:", cart);
+let message="New Order%0A";
+message+="Name: "+name+"%0A";
+message+="Phone: "+phone+"%0A";
+message+="Items:%0A";
+
+cart.forEach(item=>{
+message+=item+"%0A";
+});
+
+let whatsapp="https://wa.me/919876543210?text="+message;
+
+window.open(whatsapp,"_blank");
+
+}
+
 
 }
